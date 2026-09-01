@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Student Management System</h1>
+        <p>Serverless Web Application on AWS</p>
+    </header>
+
+    <main>
+
+        <section class="card">
+            <h2>Add Student</h2>
+
+            <form id="studentForm">
+
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Enter student name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Enter email" required>
+
+                <label for="age">Age</label>
+                <input type="number" id="age" placeholder="Enter age" required>
+
+                <label for="course">Course</label>
+                <input type="text" id="course" placeholder="Enter course" required>
+
+                <button type="submit">Add Student</button>
+
+            </form>
+
+            <p id="message"></p>
+        </section>
+
+        <section class="card">
+            <h2>Students</h2>
+
+            <button id="loadStudents">Load Students</button>
+
+            <div id="students">
+                <p>Click "Load Students" to view students.</p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Built with AWS Lambda, API Gateway, Amplify, DynamoDB & Cognito</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
